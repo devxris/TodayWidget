@@ -197,8 +197,8 @@
 		4518C5021F8744A0001A2E67 /* WeatherWidget */ = {
 			isa = PBXGroup;
 			children = (
-				4518C5031F8744A0001A2E67 /* TodayViewController.swift */,
 				4518C5051F8744A0001A2E67 /* MainInterface.storyboard */,
+				4518C5031F8744A0001A2E67 /* TodayViewController.swift */,
 				4518C5081F8744A0001A2E67 /* Info.plist */,
 			);
 			path = WeatherWidget;
