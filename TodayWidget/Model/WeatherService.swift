@@ -10,12 +10,12 @@ import Foundation
 
 public class WeatherService {
 	
-	public typealias DataCompletion = (_ data: WeatherData?) -> ()
-	
-	let openWeatherBaseAPI = "http://api.openweathermap.org/data/2.5/weather?appid=54966031ac95a147973ed2629bf464da&units=metric&q="
-	let urlSession = URLSession.shared
+	private let openWeatherBaseAPI = "http://api.openweathermap.org/data/2.5/weather?appid=54966031ac95a147973ed2629bf464da&units=metric&q="
+	private let urlSession = URLSession.shared
 	
 	public static let shared = WeatherService()
+	
+	public typealias DataCompletion = (_ data: WeatherData?) -> ()
 	
 	public func getCurrentWeather(at location: String, completion: @escaping DataCompletion) {
 		
