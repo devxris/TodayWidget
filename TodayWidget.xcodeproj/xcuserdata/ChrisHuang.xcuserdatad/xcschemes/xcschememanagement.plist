@@ -7,17 +7,27 @@
 		<key>TodayWidget.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<key>WeatherInfoKit.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>0</integer>
+		</dict>
+		<key>WeatherWidget.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>450C4E0A1F8734230036EF29</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4518C4FD1F8744A0001A2E67</key>
 		<dict>
 			<key>primary</key>
 			<true/>
