@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="urT-1I-anc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-DemiBold</string>
+            <string>AvenirNext-Medium</string>
+            <string>AvenirNext-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Weather View Controller-->
+        <scene sceneID="7uS-US-WiQ">
+            <objects>
+                <viewController id="urT-1I-anc" customClass="WeatherViewController" customModule="TodayWidget" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zB8-2H-ruQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paris" translatesAutoresizingMaskIntoConstraints="NO" id="MGU-WY-Pxm">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5T8-es-lND">
+                                <rect key="frame" x="16" y="466" width="343" height="31"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="23"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ys4-5M-xNB">
+                                <rect key="frame" x="16" y="99" width="343" height="41"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G4t-bN-eLl">
+                                <rect key="frame" x="16" y="20" width="20" height="22"/>
+                                <state key="normal" image="hamburger_icon"/>
+                                <connections>
+                                    <segue destination="G8c-Ey-xih" kind="showDetail" identifier="ShowLocations" id="c7e-bU-BrG"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wd3-eW-C0z">
+                                <rect key="frame" x="16" y="505" width="343" height="82"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="60"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4vF-ML-wW1">
+                                <rect key="frame" x="16" y="156" width="343" height="21"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MGU-WY-Pxm" firstAttribute="bottom" secondItem="mk6-hK-eH7" secondAttribute="bottom" id="4Wn-79-cam"/>
+                            <constraint firstItem="mk6-hK-eH7" firstAttribute="trailing" secondItem="wd3-eW-C0z" secondAttribute="trailing" constant="16" id="6mU-vU-9zk"/>
+                            <constraint firstItem="4vF-ML-wW1" firstAttribute="leading" secondItem="mk6-hK-eH7" secondAttribute="leading" constant="16" id="9U3-KW-QTk"/>
+                            <constraint firstItem="MGU-WY-Pxm" firstAttribute="top" secondItem="Ys4-5M-xNB" secondAttribute="bottom" constant="-140" id="F14-nx-cNe"/>
+                            <constraint firstItem="mk6-hK-eH7" firstAttribute="trailing" secondItem="4vF-ML-wW1" secondAttribute="trailing" constant="16" id="K4o-yD-isx"/>
+                            <constraint firstItem="MGU-WY-Pxm" firstAttribute="top" secondItem="zB8-2H-ruQ" secondAttribute="top" id="NBP-5R-dfz"/>
+                            <constraint firstItem="mk6-hK-eH7" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ys4-5M-xNB" secondAttribute="trailing" id="QTQ-Sj-503"/>
+                            <constraint firstItem="Ys4-5M-xNB" firstAttribute="centerX" secondItem="MGU-WY-Pxm" secondAttribute="centerX" id="SVg-TU-Snf"/>
+                            <constraint firstItem="4vF-ML-wW1" firstAttribute="top" secondItem="Ys4-5M-xNB" secondAttribute="bottom" constant="16" id="Xdz-Ir-PRe"/>
+                            <constraint firstItem="G4t-bN-eLl" firstAttribute="top" secondItem="mk6-hK-eH7" secondAttribute="top" id="acM-bX-QzN"/>
+                            <constraint firstItem="G4t-bN-eLl" firstAttribute="leading" secondItem="mk6-hK-eH7" secondAttribute="leading" constant="16" id="cDT-pN-omE"/>
+                            <constraint firstItem="Ys4-5M-xNB" firstAttribute="leading" secondItem="mk6-hK-eH7" secondAttribute="leading" constant="16" id="e1n-07-pdz"/>
+                            <constraint firstItem="wd3-eW-C0z" firstAttribute="top" secondItem="5T8-es-lND" secondAttribute="bottom" constant="8" id="jch-gA-hXy"/>
+                            <constraint firstItem="MGU-WY-Pxm" firstAttribute="leading" secondItem="mk6-hK-eH7" secondAttribute="leading" id="nCN-aM-BtZ"/>
+                            <constraint firstItem="5T8-es-lND" firstAttribute="centerX" secondItem="MGU-WY-Pxm" secondAttribute="centerX" id="oJ3-ce-Faj"/>
+                            <constraint firstItem="5T8-es-lND" firstAttribute="leading" secondItem="mk6-hK-eH7" secondAttribute="leading" constant="16" id="qaH-WP-YR4"/>
+                            <constraint firstItem="MGU-WY-Pxm" firstAttribute="trailing" secondItem="mk6-hK-eH7" secondAttribute="trailing" id="rmj-Wq-9c6"/>
+                            <constraint firstItem="wd3-eW-C0z" firstAttribute="leading" secondItem="mk6-hK-eH7" secondAttribute="leading" constant="16" id="rp5-Pt-b1C"/>
+                            <constraint firstItem="mk6-hK-eH7" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="5T8-es-lND" secondAttribute="trailing" id="s0m-nt-pIK"/>
+                            <constraint firstItem="mk6-hK-eH7" firstAttribute="bottom" secondItem="wd3-eW-C0z" secondAttribute="bottom" constant="80" id="yZl-Ax-Ygk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mk6-hK-eH7"/>
+                    </view>
+                    <connections>
+                        <outlet property="cityLabel" destination="Ys4-5M-xNB" id="QvS-iW-gF9"/>
+                        <outlet property="countryLabel" destination="4vF-ML-wW1" id="KrH-he-Gb1"/>
+                        <outlet property="temperatureLabel" destination="wd3-eW-C0z" id="LeN-Iz-99U"/>
+                        <outlet property="weatherLabel" destination="5T8-es-lND" id="oIu-My-nem"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uye-AT-sdU" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="55" y="94"/>
+        </scene>
+        <!--Location Table View Controller-->
+        <scene sceneID="Xiy-fz-rSC">
+            <objects>
+                <tableViewController id="Yrm-9T-qhm" customClass="LocationTableViewController" customModule="TodayWidget" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="1tO-my-XGX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="5wd-Rb-4cu">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5wd-Rb-4cu" id="zJo-4O-VXp">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Yrm-9T-qhm" id="2Su-cX-Jlk"/>
+                            <outlet property="delegate" destination="Yrm-9T-qhm" id="qDX-dE-4tF"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="HcQ-aG-sD7">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="fJ1-i1-BZq">
+                            <connections>
+                                <segue destination="Bm7-Ux-EXU" kind="unwind" unwindAction="unwindToHomeWithSegue:" id="7k2-W3-Xqs"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="emv-8A-X8r">
+                            <connections>
+                                <segue destination="Bm7-Ux-EXU" kind="unwind" unwindAction="updateWeatherInfoWithSegue:" id="cDC-hf-56z"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eej-zf-msf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Bm7-Ux-EXU" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1415" y="93"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ezy-F3-aKu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="G8c-Ey-xih" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pYS-fD-0EW">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Yrm-9T-qhm" kind="relationship" relationship="rootViewController" id="QQb-Bb-rjy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NQX-wN-J1b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="738" y="92"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hamburger_icon" width="20" height="14"/>
+        <image name="paris" width="1400" height="933"/>
+    </resources>
+</document>
