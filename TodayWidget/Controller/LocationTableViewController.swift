@@ -10,7 +10,7 @@ import UIKit
 
 class LocationTableViewController: UITableViewController {
 
-	var defualts = UserDefaults(suiteName: "group.com.DevXris.WeatherWidgetGroup")!
+	var defualts = UserDefaults(suiteName: "group.com.DevXris.TodayWidgetGroup")!
 	
 	let locations = ["Paris, France", "Kyoto, Japan", "Sydney, Australia", "Seattle, U.S.", "New York, U.S.", "Hong Kong, Hong Kong", "Taipei, Taiwan", "London, U.K.", "Vancouver, Canada"]
 	var selectedLocation = "Paris, France"
