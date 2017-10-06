@@ -11,4 +11,3 @@ Create Today Widget:
 1. Editor -> Add target (Today Extension)  
 2. Generat tab -> Add custom framewrok to Linked Frameworks and Libraries  
 3. Run the extension will bring up Notification Center in Today View  
-4. 
