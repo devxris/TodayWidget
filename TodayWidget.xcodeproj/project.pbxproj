@@ -86,6 +86,8 @@
 		4518C5031F8744A0001A2E67 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		4518C5061F8744A0001A2E67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		4518C5081F8744A0001A2E67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4518C5111F874D06001A2E67 /* WeatherWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WeatherWidget.entitlements; sourceTree = "<group>"; };
+		4518C5121F874DD7001A2E67 /* TodayWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TodayWidget.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 		450C4E0D1F8734230036EF29 /* TodayWidget */ = {
 			isa = PBXGroup;
 			children = (
+				4518C5121F874DD7001A2E67 /* TodayWidget.entitlements */,
 				450C4E201F8734340036EF29 /* Resources */,
 				450C4E211F87343F0036EF29 /* View */,
 				450C4E221F8734440036EF29 /* Controller */,
@@ -197,6 +200,7 @@
 		4518C5021F8744A0001A2E67 /* WeatherWidget */ = {
 			isa = PBXGroup;
 			children = (
+				4518C5111F874D06001A2E67 /* WeatherWidget.entitlements */,
 				4518C5081F8744A0001A2E67 /* Info.plist */,
 				4518C5051F8744A0001A2E67 /* MainInterface.storyboard */,
 				4518C5031F8744A0001A2E67 /* TodayViewController.swift */,
@@ -287,6 +291,11 @@
 					450C4E0A1F8734230036EF29 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					4518C4EA1F87426D001A2E67 = {
 						CreatedOnToolsVersion = 9.0;
@@ -295,6 +304,11 @@
 					4518C4FD1F8744A0001A2E67 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -529,6 +543,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TodayWidget/TodayWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9H46LQG73T;
 				INFOPLIST_FILE = "$(SRCROOT)/TodayWidget/Resources/Info.plist";
@@ -545,6 +560,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TodayWidget/TodayWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9H46LQG73T;
 				INFOPLIST_FILE = "$(SRCROOT)/TodayWidget/Resources/Info.plist";
@@ -609,6 +625,7 @@
 		4518C50D1F8744A0001A2E67 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = WeatherWidget/WeatherWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9H46LQG73T;
 				INFOPLIST_FILE = WeatherWidget/Info.plist;
@@ -624,6 +641,7 @@
 		4518C50E1F8744A0001A2E67 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = WeatherWidget/WeatherWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9H46LQG73T;
 				INFOPLIST_FILE = WeatherWidget/Info.plist;
