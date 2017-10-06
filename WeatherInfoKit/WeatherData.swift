@@ -20,4 +20,3 @@ public struct WeatherData: Decodable {
 	public var main: Main?
 	public var weather: [WeatherType]?
 }
-
